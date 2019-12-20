@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+
+body {
+	background-image: url(bg.jpg);
+	background-size: 1620px 855px;
+	background-attachment: fixed;
+}
+.form input{
+	margin-top: 5px;
+	background-color: #DDDDD;
+}
+.xing{
+	color: red;
+}
+.small{
+	font-size: 12px;
+	color: #ABDDBB;
+	margin-left: 97px;
+}
+.wc {
+	color: yellow;
+}
+.k1{
+	background-color: rgb(60,171,68);
+	font-size:  15px;
+	width: 100px;
+	height: 30px;
+	color: white;
+	border:1px solid rgb(51,150,56);
+	margin-left: 97px;
+    border-radius: 10px;
+}
+.mima{
+	margin-left: 47px;
+}
+.h3{
+	width: 344px;
+	height: 25px;
+    border-radius: 10px;
+}
+.h1{
+	width: 344px;
+	height: 25px;
+    border-radius: 10px;
+}
+.left{
+	margin-left: 17px;
+}
+</style>
+
+</head>
+<body>
+	</br></br>
+	<form action="http://www." method="post" class="form" >
+		<table>
+			<tr>
+				<td><span class="xing left">*</span></td>
+				<td><span class="wc">邮件地址</span></td>
+				<td><input type="text" name="username" class="h3" onblur="ismaill(this.value)" /></td>
+				<td><p id="prompt1"></p></td>
+			</tr>
+		</table>
+		<!--<span class="wc">@</span>
+		<select>
+			<option>qq.com</option>
+			<option>fzu.edu.cn</option>
+			<option>163.com</option>
+			<option>126.com</option>
+			<option>yeah.net</option>
+		</select>-->
+		<p class="small">6~8个字符，可使用字母，数字，下划线，需以字母开头</p>
+		<br>
+		<table>
+			<tr>
+				<td><span class="xing mima">*</span></td>
+				<td><span class="wc">密码</span></td>
+				<td><input type="password" name="密码" id="pw1" class="h1" onblur="isright(this.value)" ></td>
+				<td><p id="prompt2"></p></td>
+			</tr>
+		</table>
+		<p class="small">6~16个字符，区分大小写</p>
+		<br>
+		<table>
+			<tr>
+				<td><span class="xing left">*</span></td>
+				<td><span class="wc">确认密码</span></td>
+				<td><input type="password" name="确认密码" id="pw2" class="h1" onblur="issame()"/></td>
+				<td><p id="prompt3"></p></td>
+			</tr>
+		</table>
+		<p class="small">请再次填写密码</p>
+		<br>
+		<input type="submit" name="" value="立即注册" class="k1" disabled="false" >
+
+	</form>
+</body>
+<script src="js.js"></script>
+</html>
