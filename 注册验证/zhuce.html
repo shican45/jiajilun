@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description"    content="西二第一轮考核 2019-10-15">
+	<meta name="keywords"		content="福大,西二,前端,第一轮考核">
+	<meta name="author" 		content="18-软3-洪世灿">
+	<meta http-equiv="Refresh" 	content="30">
+	<meta charset="UTF-8">
+	<title>西二加急轮</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+	</br></br>
+	<form action="http://www." method="post" class="form" >
+		<table>
+			<tr>
+				<td><span class="xing left">*</span></td>
+				<td><span class="wc">邮件地址</span></td>
+				<td><input type="text" name="username" class="h3" onblur="ismaill(this.value)" /></td>
+				<td><p id="prompt1"></p></td>
+			</tr>
+		</table>
+		<!--<span class="wc">@</span>
+		<select>
+			<option>qq.com</option>
+			<option>fzu.edu.cn</option>
+			<option>163.com</option>
+			<option>126.com</option>
+		</select>-->
+		<p class="small">6~8个字符，可使用字母，数字，下划线，需以字母开头</p>
+		<br>
+		<table>
+			<tr>
+				<td><span class="xing mima">*</span></td>
+				<td><span class="wc">密码</span></td>
+				<td><input type="password" name="密码" id="pw1" class="h1" onblur="isright(this.value)" ></td>
+				<td><p id="prompt2"></p></td>
+			</tr>
+		</table>
+		<p class="small">6~16个字符，区分大小写</p>
+		<br>
+		<table>
+			<tr>
+				<td><span class="xing left">*</span></td>
+				<td><span class="wc">确认密码</span></td>
+				<td><input type="password" name="确认密码" id="pw2" class="h1" onblur="issame()"/></td>
+				<td><p id="prompt3"></p></td>
+			</tr>
+		</table>
+		<p class="small">请再次填写密码</p>
+		<br>
+		<input type="submit" name="" value="提交" class="k1" disabled="false" >
+
+	</form>
+</body>
+<script src="js.js"></script>
+</html>
