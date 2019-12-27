@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: #CDCDCD;
+}
+
+.header {
+    height: 80px;
+    background: rgba(47,80,90,0.980);
+}
+
+.header .box,.content{
+    width: 600px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.content{
+    margin: 0 auto;
+}
+
+.forimg {
+	text-align: center;
+    width: 600px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.img {
+	width: 600px;
+	height: 490px;
+}
+
+label {
+    float: left;
+    width: 100px;
+    line-height: 50px;/*行高*/
+    color: #DDD;
+    font-size: 24px;
+    cursor: pointer;/*鼠标样式*/
+    font-family: sans-serif;/*字体*/
+}
+
+.header input {
+    float: right;
+    width: 60%;
+    height: 24px;
+    margin-top: 12px;
+    text-indent: 10px;/*缩进*/
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.24), 0 1px 6px rgba(0,0,0,0.45) inset;/*阴影*/
+    border: none
+}
+
+input:focus {
+    outline-width: 0px;/*轮廓*/
+}
+
+h2 {
+	font-family: 微软黑体;
+	font-style: italic;
+    position: relative;
+}
+.h2color {
+	color: black;
+}
+
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+ol p {
+    display: -webkit-box;
+	-webkit-box-orient: vertical;/*从上向下垂直排列子元素*/
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+li input {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+    cursor: text;
+}
+
+p {
+    margin: 0;
+	height: 65px;
+}
+
+li p input {
+    top: 3px;
+    left: 40px;
+    width: 70%;
+    height: 20px;
+    line-height: 14px;
+    text-indent: 5px;
+    font-size: 14px;
+	
+}
+
+li p textarea {
+    top: 3px;
+    left: 40px;
+    width: 70%;
+    height: 60px;
+    line-height: 14px;
+    text-indent: 5px;
+    font-size: 14px;
+}
+
+li {
+    height: 70px;
+    line-height: 32px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 45px;
+    border-radius: 3px;
+    border-left: 5px solid #629A9C;
+    border-right: 5px solid black;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+	///*animation: mymove 5s infinite;
+	-webkit-animation: mymove 5s infinite;*/
+}
+/*
+@keyframes mymove {
+	from {
+		left: 0px;
+	   opacity: 0 ;
+	   animation: new-item-animation . 3 s linear forwards;
+	}
+	to {
+		left: 400px;
+	   opacity: 1 ;
+	   animation: new-item-animation . 3 s linear forwards;
+	}
+}
+-webkit-keyframes mymove {
+	from {
+		opacity: 0 ;
+		transform: translateX( 0 );
+	}
+	to {
+		opacity: 1 ;
+		transform: translateX( 400px );
+	}
+}
+
+		
+    line-height: 50px;行高
+　CSS中通过letter-spacing属性来调整字间距，这个属性同样可以设置相对数值和绝对数值。
+
+　　例：letter-spacing:4px;
+
+　　有时候我们文字居中后设置字间距后会发现文字向左偏移了，这是我们可以通过设置padding-left来恢复居中效果,以上面为例，可以这样设置：
+
+　　padding-left: 4px//消除偏左影响
+*/
+
+ol li {
+    cursor: move;
+}
+
+li a {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    border-radius: 14px;
+    border: 6px double #FFF;
+    background: #CCC;
+    line-height: 10px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
